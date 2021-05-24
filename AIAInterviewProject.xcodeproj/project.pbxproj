@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		4C7C9C762658DF8100C473EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C9C752658DF8100C473EE /* AppDelegate.swift */; };
 		4C7C9C782658DF8100C473EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C9C772658DF8100C473EE /* SceneDelegate.swift */; };
-		4C7C9C7A2658DF8100C473EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C9C792658DF8100C473EE /* ViewController.swift */; };
 		4C7C9C7D2658DF8100C473EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7C9C7B2658DF8100C473EE /* Main.storyboard */; };
 		4C7C9C802658DF8100C473EE /* AIAInterviewProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C9C7E2658DF8100C473EE /* AIAInterviewProject.xcdatamodeld */; };
 		4C7C9C822658DF8200C473EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C7C9C812658DF8200C473EE /* Assets.xcassets */; };
 		4C7C9C852658DF8200C473EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7C9C832658DF8200C473EE /* LaunchScreen.storyboard */; };
+		4C7C9C91265A643300C473EE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C9C90265A643300C473EE /* FirstViewController.swift */; };
+		4C7C9C95265A690A00C473EE /* FirstSrcreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C9C94265A690A00C473EE /* FirstSrcreenCell.swift */; };
+		4C7C9C99265A818800C473EE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C9C98265A818800C473EE /* SecondViewController.swift */; };
+		4C7C9C9C265AB19300C473EE /* SecondScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C9C9B265AB19300C473EE /* SecondScreenCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C7C9C722658DF8100C473EE /* AIAInterviewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIAInterviewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7C9C752658DF8100C473EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C7C9C772658DF8100C473EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4C7C9C792658DF8100C473EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C7C9C7C2658DF8100C473EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C7C9C7F2658DF8100C473EE /* AIAInterviewProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AIAInterviewProject.xcdatamodel; sourceTree = "<group>"; };
 		4C7C9C812658DF8200C473EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C7C9C842658DF8200C473EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C7C9C862658DF8200C473EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C7C9C90265A643300C473EE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		4C7C9C94265A690A00C473EE /* FirstSrcreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSrcreenCell.swift; sourceTree = "<group>"; };
+		4C7C9C98265A818800C473EE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4C7C9C9B265AB19300C473EE /* SecondScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,10 @@
 		4C7C9C742658DF8100C473EE /* AIAInterviewProject */ = {
 			isa = PBXGroup;
 			children = (
+				4C7C9C97265A816600C473EE /* SecondScreen */,
+				4C7C9C8E265A640000C473EE /* FirstScreen */,
 				4C7C9C752658DF8100C473EE /* AppDelegate.swift */,
 				4C7C9C772658DF8100C473EE /* SceneDelegate.swift */,
-				4C7C9C792658DF8100C473EE /* ViewController.swift */,
 				4C7C9C7B2658DF8100C473EE /* Main.storyboard */,
 				4C7C9C812658DF8200C473EE /* Assets.xcassets */,
 				4C7C9C832658DF8200C473EE /* LaunchScreen.storyboard */,
@@ -68,6 +75,24 @@
 				4C7C9C7E2658DF8100C473EE /* AIAInterviewProject.xcdatamodeld */,
 			);
 			path = AIAInterviewProject;
+			sourceTree = "<group>";
+		};
+		4C7C9C8E265A640000C473EE /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4C7C9C90265A643300C473EE /* FirstViewController.swift */,
+				4C7C9C94265A690A00C473EE /* FirstSrcreenCell.swift */,
+			);
+			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		4C7C9C97265A816600C473EE /* SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4C7C9C98265A818800C473EE /* SecondViewController.swift */,
+				4C7C9C9B265AB19300C473EE /* SecondScreenCell.swift */,
+			);
+			path = SecondScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C7C9C7A2658DF8100C473EE /* ViewController.swift in Sources */,
+				4C7C9C99265A818800C473EE /* SecondViewController.swift in Sources */,
+				4C7C9C9C265AB19300C473EE /* SecondScreenCell.swift in Sources */,
 				4C7C9C762658DF8100C473EE /* AppDelegate.swift in Sources */,
+				4C7C9C95265A690A00C473EE /* FirstSrcreenCell.swift in Sources */,
 				4C7C9C802658DF8100C473EE /* AIAInterviewProject.xcdatamodeld in Sources */,
 				4C7C9C782658DF8100C473EE /* SceneDelegate.swift in Sources */,
+				4C7C9C91265A643300C473EE /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
