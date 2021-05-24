@@ -79,7 +79,7 @@ class SecondViewController: UIViewController {
 extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -96,6 +96,32 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 116
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let viewHeader = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 60))
+        viewHeader.backgroundColor = UIColor.systemGray5
+        
+        let viewHeaderBackground = UIView(frame: CGRect(x: 15, y: 5, width: view.frame.width-30, height: 50))
+        viewHeaderBackground.backgroundColor = UIColor.systemGray6
+//        viewHeaderBackground.layer.cornerRadius = 15
+        viewHeader.addSubview(viewHeaderBackground)
+        
+        let labelTitle = UILabel(frame: CGRect(x: 15, y: 0, width: viewHeaderBackground.frame.width-10, height: viewHeaderBackground.frame.height))
+        labelTitle.text = "19/09/2021"
+        labelTitle.textColor = UIColor.black
+        viewHeaderBackground.addSubview(labelTitle)
+        
+        return viewHeader
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 60
     }
     
 }
