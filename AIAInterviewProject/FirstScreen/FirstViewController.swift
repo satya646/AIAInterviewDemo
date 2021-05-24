@@ -10,6 +10,9 @@ import UIKit
 class FirstViewController: UIViewController {
 
     //MARK: - Properties
+    @IBOutlet var tableViewSearch: UITableView!
+    @IBOutlet var tableViewSymbolsData: UITableView!
+    
     @IBOutlet var textFieldSearch: UITextField!
     
     @IBOutlet var labelSymbolName: UILabel!
@@ -23,18 +26,22 @@ class FirstViewController: UIViewController {
     var viewActivity: UIView!
     var activitySpinner = UIActivityIndicatorView(style: .large)
     
+    @IBOutlet var viewOverlaySearch: UIView!
+    
+    
     //MARK: - ViewController Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        tableViewSearch.rowHeight = UITableView.automaticDimension
+        tableViewSearch.estimatedRowHeight = UITableView.automaticDimension
     }
     
     //MARK: - Button Actions
     
     @IBAction func searchAction(_ sender: UIButton) {
-        
+
         textFieldSearch.resignFirstResponder()
     }
     
@@ -79,25 +86,66 @@ class FirstViewController: UIViewController {
         viewActivity.removeFromSuperview()
     }
     
+    //MARK: - Touch up inside
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            if touch.view == viewOverlaySearch {
+                viewOverlaySearch.isHidden = true
+                tableViewSearch.isHidden = true
+            }
+        }
+    }
+    
 }
 
 extension FirstViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        
+        if tableView.tag == 2{
+            return 10
+        }
+        else{
+            return 10
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell_first_screen = tableView.dequeueReusableCell(withIdentifier: "FirstSrcreenCellID") as! FirstSrcreenCell
-        
-        cell_first_screen.labelOpen.text = "1111440.0"
-        cell_first_screen.labelHigh.text = "12323230.0"
-        cell_first_screen.labelLow.text = "123220.0"
-        cell_first_screen.labelDateTime.text = "28/08/2021"
-        
-        return cell_first_screen
+        if tableView.tag == 2{
+            
+            let cell_first_screen_search = tableView.dequeueReusableCell(withIdentifier: "FirstScreenSearchCellID") as! FirstScreenSearchCell
+            
+            if indexPath.row == 0{
+                cell_first_screen_search.labelSearchResult.text = "IBM - IBM Company IBM CompanyIBM Company IBM Company"
+            }
+            else{
+                cell_first_screen_search.labelSearchResult.text = "IBM - IBM Company IBM"
+            }
+            
+            return cell_first_screen_search
+        }
+        else{
+            let cell_first_screen = tableView.dequeueReusableCell(withIdentifier: "FirstSrcreenCellID") as! FirstSrcreenCell
+            
+    //        cell_first_screen.labelOpen.text = "1111440.0"
+    //        cell_first_screen.labelHigh.text = "12323230.0"
+    //        cell_first_screen.labelLow.text = "123220.0"
+    //        cell_first_screen.labelDateTime.text = "28/08/2021"
+            
+            return cell_first_screen
+        }
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if tableView.tag == 2{
+            return UITableView.automaticDimension
+        }
+        else{
+            return 46
+        }
+    }
+    
 }
 
 extension FirstViewController: UITextFieldDelegate{

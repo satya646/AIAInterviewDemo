@@ -18,6 +18,7 @@
 		4C7C9C9C265AB19300C473EE /* SecondScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C9C9B265AB19300C473EE /* SecondScreenCell.swift */; };
 		4CBDABEE265B2B50005C3D1B /* FirstScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDABED265B2B4F005C3D1B /* FirstScreenCell.swift */; };
 		4CBDABF2265B339E005C3D1B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDABF1265B339E005C3D1B /* ThirdViewController.swift */; };
+		4CBDABF5265B4DC4005C3D1B /* FirstScreenSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDABF4265B4DC4005C3D1B /* FirstScreenSearchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		4C7C9C9B265AB19300C473EE /* SecondScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenCell.swift; sourceTree = "<group>"; };
 		4CBDABED265B2B4F005C3D1B /* FirstScreenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenCell.swift; sourceTree = "<group>"; };
 		4CBDABF1265B339E005C3D1B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		4CBDABF4265B4DC4005C3D1B /* FirstScreenSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenSearchCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				4C7C9C90265A643300C473EE /* FirstViewController.swift */,
 				4CBDABED265B2B4F005C3D1B /* FirstScreenCell.swift */,
+				4CBDABF4265B4DC4005C3D1B /* FirstScreenSearchCell.swift */,
 			);
 			path = FirstScreen;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				4C7C9C99265A818800C473EE /* SecondViewController.swift in Sources */,
 				4C7C9C9C265AB19300C473EE /* SecondScreenCell.swift in Sources */,
+				4CBDABF5265B4DC4005C3D1B /* FirstScreenSearchCell.swift in Sources */,
 				4CBDABEE265B2B50005C3D1B /* FirstScreenCell.swift in Sources */,
 				4C7C9C762658DF8100C473EE /* AppDelegate.swift in Sources */,
 				4C7C9C802658DF8100C473EE /* AIAInterviewProject.xcdatamodeld in Sources */,
