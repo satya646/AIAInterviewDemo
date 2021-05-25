@@ -33,16 +33,19 @@ class ThirdViewController: UIViewController {
         //Storing API KEY into keychain
         if let string_key = textFieldAPIKey.text{
             let _ = save(key: "API_KEY", data: Data(string_key.utf8))
+            AIAShare.shared.API_KEY = string_key
         }
         
         //Storing Interval into UserDefaults
         if let string_interval = textFieldInterval.text{
             UserDefaults.standard.setValue(string_interval, forKey: "INTERVAL_VALUE")
+            AIAShare.shared.INTERVAL_VALUE = string_interval
         }
         
         //Storing Output into UserDefaults
         if let string_interval = textFieldOutput.text{
             UserDefaults.standard.setValue(string_interval, forKey: "OUTPUT_VALUE")
+            AIAShare.shared.OUTPUT_VALUE = string_interval
         }
         
     }
@@ -93,15 +96,18 @@ class ThirdViewController: UIViewController {
         let result = load(key: "API_KEY")
         if let data_result = result{
             if let string_to_data = String(data: data_result, encoding: .utf8){
+                AIAShare.shared.API_KEY = string_to_data
                 textFieldAPIKey.text = string_to_data
             }
         }
         
         if let string_interval = UserDefaults.standard.value(forKey: "INTERVAL_VALUE") as? String{
+            AIAShare.shared.INTERVAL_VALUE = string_interval
             textFieldInterval.text = string_interval
         }
         
-        if let string_output = UserDefaults.standard.value(forKey: "INTERVAL_VALUE") as? String{
+        if let string_output = UserDefaults.standard.value(forKey: "OUTPUT_VALUE") as? String{
+            AIAShare.shared.OUTPUT_VALUE = string_output
             textFieldOutput.text = string_output
         }
     }

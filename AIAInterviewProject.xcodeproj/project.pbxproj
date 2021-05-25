@@ -19,6 +19,16 @@
 		4CBDABEE265B2B50005C3D1B /* FirstScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDABED265B2B4F005C3D1B /* FirstScreenCell.swift */; };
 		4CBDABF2265B339E005C3D1B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDABF1265B339E005C3D1B /* ThirdViewController.swift */; };
 		4CBDABF5265B4DC4005C3D1B /* FirstScreenSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDABF4265B4DC4005C3D1B /* FirstScreenSearchCell.swift */; };
+		4CBDABFC265B5418005C3D1B /* SymbolSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDABFB265B5418005C3D1B /* SymbolSearchResult.swift */; };
+		4CBDAC00265B5500005C3D1B /* IntraData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDABFF265B5500005C3D1B /* IntraData.swift */; };
+		4CBDAC0A265B5609005C3D1B /* FirstPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDAC09265B5609005C3D1B /* FirstPresenter.swift */; };
+		4CBDAC0E265B5622005C3D1B /* FirstProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDAC0D265B5622005C3D1B /* FirstProtocol.swift */; };
+		4CBDAC1A265B6BA2005C3D1B /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDAC19265B6BA2005C3D1B /* Utility.swift */; };
+		4CBDAC1E265B6C13005C3D1B /* NetworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDAC1D265B6C13005C3D1B /* NetworkInterface.swift */; };
+		4CBDAC27265CDE09005C3D1B /* AIAShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDAC26265CDE09005C3D1B /* AIAShared.swift */; };
+		4CBDAC2C265CE1F3005C3D1B /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDAC2B265CE1F3005C3D1B /* TabbarViewController.swift */; };
+		4CBDAC32265D22A9005C3D1B /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDAC31265D22A9005C3D1B /* SecondPresenter.swift */; };
+		4CBDAC35265D22B9005C3D1B /* SecondProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBDAC34265D22B9005C3D1B /* SecondProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +46,16 @@
 		4CBDABED265B2B4F005C3D1B /* FirstScreenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenCell.swift; sourceTree = "<group>"; };
 		4CBDABF1265B339E005C3D1B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		4CBDABF4265B4DC4005C3D1B /* FirstScreenSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenSearchCell.swift; sourceTree = "<group>"; };
+		4CBDABFB265B5418005C3D1B /* SymbolSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolSearchResult.swift; sourceTree = "<group>"; };
+		4CBDABFF265B5500005C3D1B /* IntraData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntraData.swift; sourceTree = "<group>"; };
+		4CBDAC09265B5609005C3D1B /* FirstPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPresenter.swift; sourceTree = "<group>"; };
+		4CBDAC0D265B5622005C3D1B /* FirstProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstProtocol.swift; sourceTree = "<group>"; };
+		4CBDAC19265B6BA2005C3D1B /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		4CBDAC1D265B6C13005C3D1B /* NetworkInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkInterface.swift; sourceTree = "<group>"; };
+		4CBDAC26265CDE09005C3D1B /* AIAShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAShared.swift; sourceTree = "<group>"; };
+		4CBDAC2B265CE1F3005C3D1B /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		4CBDAC31265D22A9005C3D1B /* SecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
+		4CBDAC34265D22B9005C3D1B /* SecondProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +88,10 @@
 		4C7C9C742658DF8100C473EE /* AIAInterviewProject */ = {
 			isa = PBXGroup;
 			children = (
+				4CBDAC2A265CE1DC005C3D1B /* Tabbar */,
+				4CBDAC25265CDDF8005C3D1B /* SharedInstance */,
+				4CBDAC1C265B6BE5005C3D1B /* NetworkInterface */,
+				4CBDAC18265B6B8B005C3D1B /* Utility */,
 				4CBDABF0265B336D005C3D1B /* ThridScreen */,
 				4C7C9C97265A816600C473EE /* SecondScreen */,
 				4C7C9C8E265A640000C473EE /* FirstScreen */,
@@ -85,9 +109,9 @@
 		4C7C9C8E265A640000C473EE /* FirstScreen */ = {
 			isa = PBXGroup;
 			children = (
-				4C7C9C90265A643300C473EE /* FirstViewController.swift */,
-				4CBDABED265B2B4F005C3D1B /* FirstScreenCell.swift */,
-				4CBDABF4265B4DC4005C3D1B /* FirstScreenSearchCell.swift */,
+				4CBDABFA265B53ED005C3D1B /* Presenter */,
+				4CBDABF9265B53E8005C3D1B /* Views */,
+				4CBDABF8265B53DD005C3D1B /* Model */,
 			);
 			path = FirstScreen;
 			sourceTree = "<group>";
@@ -95,8 +119,9 @@
 		4C7C9C97265A816600C473EE /* SecondScreen */ = {
 			isa = PBXGroup;
 			children = (
-				4C7C9C98265A818800C473EE /* SecondViewController.swift */,
-				4C7C9C9B265AB19300C473EE /* SecondScreenCell.swift */,
+				4CBDAC30265D228F005C3D1B /* Presenter */,
+				4CBDAC2F265D2289005C3D1B /* Views */,
+				4CBDAC2E265D21C4005C3D1B /* Model */,
 			);
 			path = SecondScreen;
 			sourceTree = "<group>";
@@ -107,6 +132,91 @@
 				4CBDABF1265B339E005C3D1B /* ThirdViewController.swift */,
 			);
 			path = ThridScreen;
+			sourceTree = "<group>";
+		};
+		4CBDABF8265B53DD005C3D1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CBDABFB265B5418005C3D1B /* SymbolSearchResult.swift */,
+				4CBDABFF265B5500005C3D1B /* IntraData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4CBDABF9265B53E8005C3D1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C7C9C90265A643300C473EE /* FirstViewController.swift */,
+				4CBDABED265B2B4F005C3D1B /* FirstScreenCell.swift */,
+				4CBDABF4265B4DC4005C3D1B /* FirstScreenSearchCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4CBDABFA265B53ED005C3D1B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4CBDAC09265B5609005C3D1B /* FirstPresenter.swift */,
+				4CBDAC0D265B5622005C3D1B /* FirstProtocol.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		4CBDAC18265B6B8B005C3D1B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4CBDAC19265B6BA2005C3D1B /* Utility.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		4CBDAC1C265B6BE5005C3D1B /* NetworkInterface */ = {
+			isa = PBXGroup;
+			children = (
+				4CBDAC1D265B6C13005C3D1B /* NetworkInterface.swift */,
+			);
+			name = NetworkInterface;
+			sourceTree = "<group>";
+		};
+		4CBDAC25265CDDF8005C3D1B /* SharedInstance */ = {
+			isa = PBXGroup;
+			children = (
+				4CBDAC26265CDE09005C3D1B /* AIAShared.swift */,
+			);
+			path = SharedInstance;
+			sourceTree = "<group>";
+		};
+		4CBDAC2A265CE1DC005C3D1B /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				4CBDAC2B265CE1F3005C3D1B /* TabbarViewController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		4CBDAC2E265D21C4005C3D1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CBDAC2F265D2289005C3D1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C7C9C98265A818800C473EE /* SecondViewController.swift */,
+				4C7C9C9B265AB19300C473EE /* SecondScreenCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4CBDAC30265D228F005C3D1B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4CBDAC31265D22A9005C3D1B /* SecondPresenter.swift */,
+				4CBDAC34265D22B9005C3D1B /* SecondProtocol.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,14 +289,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CBDAC1A265B6BA2005C3D1B /* Utility.swift in Sources */,
 				4C7C9C99265A818800C473EE /* SecondViewController.swift in Sources */,
+				4CBDAC35265D22B9005C3D1B /* SecondProtocol.swift in Sources */,
 				4C7C9C9C265AB19300C473EE /* SecondScreenCell.swift in Sources */,
+				4CBDABFC265B5418005C3D1B /* SymbolSearchResult.swift in Sources */,
 				4CBDABF5265B4DC4005C3D1B /* FirstScreenSearchCell.swift in Sources */,
+				4CBDAC0E265B5622005C3D1B /* FirstProtocol.swift in Sources */,
 				4CBDABEE265B2B50005C3D1B /* FirstScreenCell.swift in Sources */,
+				4CBDAC2C265CE1F3005C3D1B /* TabbarViewController.swift in Sources */,
+				4CBDAC32265D22A9005C3D1B /* SecondPresenter.swift in Sources */,
+				4CBDAC27265CDE09005C3D1B /* AIAShared.swift in Sources */,
+				4CBDAC00265B5500005C3D1B /* IntraData.swift in Sources */,
 				4C7C9C762658DF8100C473EE /* AppDelegate.swift in Sources */,
 				4C7C9C802658DF8100C473EE /* AIAInterviewProject.xcdatamodeld in Sources */,
+				4CBDAC0A265B5609005C3D1B /* FirstPresenter.swift in Sources */,
 				4C7C9C782658DF8100C473EE /* SceneDelegate.swift in Sources */,
 				4CBDABF2265B339E005C3D1B /* ThirdViewController.swift in Sources */,
+				4CBDAC1E265B6C13005C3D1B /* NetworkInterface.swift in Sources */,
 				4C7C9C91265A643300C473EE /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
