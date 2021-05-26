@@ -18,9 +18,16 @@ class FirstViewController: UIViewController, FirstViewProtocol {
     @IBOutlet var labelSymbolName: UILabel!
     
     @IBOutlet var imageArrowOpen: UIImageView!
+    var isOpenAscending: Bool = false
+    
     @IBOutlet var imageArrowHigh: UIImageView!
+    var isHighAscending: Bool = false
+    
     @IBOutlet var imageArrowLow: UIImageView!
+    var isLowAscending: Bool = false
+    
     @IBOutlet var imageArrowDateTime: UIImageView!
+    var isDateAscending: Bool = false
     
     @IBOutlet var viewSortOptions: UIView!
     
@@ -62,21 +69,116 @@ class FirstViewController: UIViewController, FirstViewProtocol {
     @IBAction func openButtonAction(_ sender: Any) {
         
         textFieldSearch.resignFirstResponder()
+        
+        if self.isOpenAscending{
+            
+            self.isOpenAscending = false
+            UIView.animate(withDuration: 0.5) {
+                self.imageArrowOpen.transform = CGAffineTransform.identity
+            }
+            
+            self.firstPresenter?.intraData?.sort{
+                ($0.timeSeriesValue?.open!)! > ($1.timeSeriesValue?.open!)!
+            }
+        }
+        else{
+            
+            self.isOpenAscending = true
+            UIView.animate(withDuration: 0.5) {
+                self.imageArrowOpen.transform = CGAffineTransform(rotationAngle: .pi)
+            }
+            
+            self.firstPresenter?.intraData?.sort{
+                ($0.timeSeriesValue?.open!)! < ($1.timeSeriesValue?.open!)!
+            }
+        }
+        
+        tableViewSymbolsData.reloadData()
     }
     
     @IBAction func highButtonAction(_ sender: Any) {
         
         textFieldSearch.resignFirstResponder()
+        
+        if self.isHighAscending{
+            self.isHighAscending = false
+            UIView.animate(withDuration: 0.5) {
+                self.imageArrowHigh.transform = CGAffineTransform.identity
+            }
+            self.firstPresenter?.intraData?.sort{
+                ($0.timeSeriesValue?.high!)! > ($1.timeSeriesValue?.high!)!
+            }
+        }
+        else{
+            self.isHighAscending = true
+            UIView.animate(withDuration: 0.5) {
+                self.imageArrowHigh.transform = CGAffineTransform(rotationAngle: .pi)
+            }
+            
+            self.firstPresenter?.intraData?.sort{
+                ($0.timeSeriesValue?.high!)! < ($1.timeSeriesValue?.high!)!
+            }
+        }
+        
+        tableViewSymbolsData.reloadData()
     }
     
     @IBAction func lowButtonAction(_ sender: Any) {
         
         textFieldSearch.resignFirstResponder()
+        
+        if self.isLowAscending{
+            self.isLowAscending = false
+            
+            UIView.animate(withDuration: 0.5) {
+                self.imageArrowLow.transform = CGAffineTransform.identity
+            }
+            
+            self.firstPresenter?.intraData?.sort{
+                ($0.timeSeriesValue?.low!)! > ($1.timeSeriesValue?.low!)!
+            }
+            
+        }
+        else{
+            self.isLowAscending = true
+            
+            UIView.animate(withDuration: 0.5) {
+                self.imageArrowLow.transform = CGAffineTransform(rotationAngle: .pi)
+            }
+            
+            self.firstPresenter?.intraData?.sort{
+                ($0.timeSeriesValue?.low!)! < ($1.timeSeriesValue?.low!)!
+            }
+        }
+        
+        tableViewSymbolsData.reloadData()
     }
     
     @IBAction func dateTimeAction(_ sender: Any) {
         
         textFieldSearch.resignFirstResponder()
+        
+        
+        if self.isDateAscending{
+            self.isDateAscending = false
+            UIView.animate(withDuration: 0.5) {
+                self.imageArrowDateTime.transform = CGAffineTransform.identity
+            }
+            self.firstPresenter?.intraData?.sort{
+                $0.timeSeriesKey! > $1.timeSeriesKey!
+            }
+        }
+        else{
+            self.isDateAscending = true
+            UIView.animate(withDuration: 0.5) {
+                self.imageArrowDateTime.transform = CGAffineTransform(rotationAngle: .pi)
+            }
+            self.firstPresenter?.intraData?.sort{
+                $0.timeSeriesKey! < $1.timeSeriesKey!
+            }
+        }
+        
+        tableViewSymbolsData.reloadData()
     }
     
     //MARK: - Activity Indicator
@@ -139,6 +241,7 @@ class FirstViewController: UIViewController, FirstViewProtocol {
             if time_series_.count > 0{
                 tableViewSymbolsData.reloadData()
                 viewSortOptions.isHidden = false
+                textFieldSearch.text = ""
             }
         }
     }

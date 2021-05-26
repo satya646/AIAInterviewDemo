@@ -634,7 +634,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="lowButtonAction:" destination="bqB-5Y-uRk" eventType="touchUpInside" id="frs-55-aOU"/>
+                                            <action selector="dateTimeAction:" destination="bqB-5Y-uRk" eventType="touchUpInside" id="BRM-5q-CNe"/>
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYJ-dJ-470" customClass="UIControl">
@@ -668,7 +668,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="dateTimeAction:" destination="bqB-5Y-uRk" eventType="touchUpInside" id="Ugr-10-gds"/>
+                                            <action selector="lowButtonAction:" destination="bqB-5Y-uRk" eventType="touchUpInside" id="RR2-pi-1B0"/>
                                         </connections>
                                     </view>
                                 </subviews>
